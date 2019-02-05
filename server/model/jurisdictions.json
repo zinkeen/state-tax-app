@@ -1,0 +1,39 @@
+[
+    { 
+      "name": "CA",
+      "taxrate":"0.0884",
+      "minimumtax": 800,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": true,
+      "economicNexus": true,
+      "franchiseTax:": false,
+      "singlesales:": true
+    },
+     { 
+      "name": "NY",
+      "taxrate":"0.065",
+      "minimumtax": 2000,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": true,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+      { 
+      "name": "NJ",
+      "taxrate": "0.065",
+      "minimumtax": 2000,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    }
+
+]

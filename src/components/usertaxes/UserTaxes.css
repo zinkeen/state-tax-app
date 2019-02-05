@@ -1,0 +1,86 @@
+body {
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .Clients {
+      width: 90vw;
+      margin: 0 5vw;
+  } 
+  
+  .LoadBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: #ecf0f1;
+  }
+  
+  .LoadBar > p {
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(93,93,98,0.4);
+  }
+
+  .clienttax {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: #ecf0f1;
+  }
+  
+  .clienttax > p {
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(93,93,98,0.4);
+  }
+  
+  .totalstax {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: #ecf0f1;
+  }
+  
+  .totalstax > p {
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(93,93,98,0.4);
+  }
+  .client > p:hover {
+    color: white
+  }
+  
+  .tablename {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: #F7CE3E;
+    
+  }
+  
+  .tablename > p {
+    justify-self: center;
+    align-self: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(93,93,98,0.4);
+  }
+  
+  

@@ -1,0 +1,46 @@
+
+[
+    {
+      "activeStateName": "CA",
+      "salesAmount": 100000,
+      "payrollAmount": 100000,
+      "propertyAmount": 100000,
+      "federalTaxableIncome": 100000,
+      "apportionment": 0,
+      "adjustedFederalTaxableIncome": 100000,
+      "adjustment": 0,
+      "stateTaxableIncome": 0,
+      "stateTax": 0,
+      "previouslyfiled": true,
+      "taxLaw:": {}
+     
+    },
+     {
+       "activeStateName": "NY",
+      "salesAmount": 100000,
+      "payrollAmount": 100000,
+      "propertyAmount": 100000,
+      "federalTaxableIncome": 100000,
+      "apportionment": 0,
+      "adjustedFederalTaxableIncome": 100000,
+      "adjustment": 0,
+      "stateTaxableIncome": 0,
+      "stateTax": 0,
+      "previouslyfiled": true,
+      "taxLaw:": {}
+    },
+     {
+       "activeStateName": "NJ",
+      "salesAmount": 100000,
+      "payrollAmount": 100000,
+      "propertyAmount": 100000,
+      "federalTaxableIncome": 100000,
+      "apportionment": 0,
+      "adjustedFederalTaxableIncome": 100000,
+      "adjustment": 0,
+      "stateTaxableIncome": 0,
+      "stateTax": 0,
+      "previouslyfiled": true,
+      "taxLaw:": {}
+    }
+ ]

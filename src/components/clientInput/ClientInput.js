@@ -63,7 +63,7 @@ class ClientInput extends Component {
   getStatesDropdown = () => {
     return(
       <div>
-      <select name='newState' value={this.state.newState} onChange={this.handleChange}>
+      <select className="new-state-select" name='newState' value={this.state.newState} onChange={this.handleChange}>
         {this.state.stateList.map(sa => {
           return <option value={sa}>{sa}</option>
         })}
@@ -89,7 +89,7 @@ class ClientInput extends Component {
       <div className="ClientInput">
       <span>Enter Federal Taxable Income</span>
       <FederalTaxableIncome addFederalInfo = {this.addFederalInfo}/>
-      <div>{this.getStatesDropdown()} 
+      <div className="state-drop-down">{this.getStatesDropdown()} 
       <button onClick={this.addStateInfo}>Add State</button></div>
       {stateInputNames.length === 0 ? this.getStatesDropdown() : 
         stateInputNames.map(stateAbbreviation => {
@@ -101,10 +101,8 @@ class ClientInput extends Component {
             availableStates={this.state.stateList}
         />})
       }
-
-      <br/>
      
-    <button onClick={this.sendInformationtoDB}>Submit for Tax Calculation</button>
+    <button onClick={this.sendInformationtoDB} className="review-texas-submit">Submit for Tax Calculation</button>
       </div>
     );
   }

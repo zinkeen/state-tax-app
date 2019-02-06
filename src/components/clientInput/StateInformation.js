@@ -43,7 +43,7 @@ class StateInformation extends Component {
       
       <input type ="number" name={this.state.stateName} value = {this.state.sales}  onChange ={this.handleEvent} placeholder = "Enter Sales"/>
     
-      <button name = {this.state.stateName } onClick ={this.removeStateInfo}>-</button>
+      <button name = {this.state.stateName } onClick ={this.removeStateInfo}>x</button>
      
       </div>
     );

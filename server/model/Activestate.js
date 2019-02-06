@@ -1,7 +1,8 @@
 const mongoose = require ('mongoose')
 const Schema = mongoose.Schema
 // mongoose.connect('mongodb://localhost/activestatesDB', { useNewUrlParser: true })
-
+const Model  = require('./Jurisdiction')
+const jurisdictionSchema=Model.jurisdictionSchema
 
 
 
@@ -18,7 +19,7 @@ const activeStateSchema = new Schema({
     adjustment:Number,
     stateTaxableIncome:Number,
     stateTax:Number,
-    taxLaw: {type: Schema.Types.ObjectId, ref: 'Jurisdiction'}
+    taxLaw: jurisdictionSchema
 
 
 })
@@ -32,7 +33,7 @@ const ActiveState = mongoose.model("ActiveState", activeStateSchema )
     let activeState =new ActiveState(a)
     activeState.save()
 })  */
-
+// taxLaw: {type: Schema.Types.ObjectId, ref: 'Jurisdiction'}
 
 module.exports = ActiveState
 

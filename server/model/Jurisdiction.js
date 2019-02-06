@@ -25,10 +25,16 @@ const Jurisdiction = mongoose.model("Jurisdiction", jurisdictionSchema)
  //  Creating the DB 
 //  const data = require('../model/jurisdictions.json')
 
-/*  data.forEach(j=>{
-    let jurisdiction =new Jurisdiction(j)
-    jurisdiction.save()
-}) 
- */
+//  data.forEach(j=>{
+//     let jurisdiction =new Jurisdiction(j)
+//     jurisdiction.save()
+// }) 
 
-module.exports = Jurisdiction 
+
+
+
+
+module.exports = {
+    jurisdictionSchema: jurisdictionSchema,
+    jurisdiction: Jurisdiction 
+}

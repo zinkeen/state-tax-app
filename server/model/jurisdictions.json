@@ -1,17 +1,396 @@
-[
-    { 
-      "name": "CA",
-      "taxrate":"0.0884",
-      "minimumtax": 800,
-      "salesFactorWeight": 100,
-      "propertyFactorWeigh": 0,
-      "payrollFactorWeight": 0,
-      "localTax": true,
-      "economicNexus": true,
-      "franchiseTax:": false,
-      "singlesales:": true
-    },
-     { 
+
+[  
+  { 
+    "name": "AL",
+    "taxrate":"0.065",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "AK",
+    "taxrate":"0.094",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "AZ",
+    "taxrate":"0.049",
+    "minimumtax": 100,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "AR",
+    "taxrate":"0.065",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "CA",
+    "taxrate":"0.0884",
+    "minimumtax": 800,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  
+  { 
+    "name": "CO",
+    "taxrate":"0.0463",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "CT",
+    "taxrate":"0.075",
+    "minimumtax": 250,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "DE",
+    "taxrate":"0.087",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "DC",
+    "taxrate":"0.0825",
+    "minimumtax": 250,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "FL",
+    "taxrate":"0.055",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "GA",
+    "taxrate":"0.06",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "HI",
+    "taxrate":"0.064",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "ID",
+    "taxrate":"0.074",
+    "minimumtax": 20,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "IL",
+    "taxrate":"0.095",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "IN",
+    "taxrate":"0.06",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "IA",
+    "taxrate":"0.12",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "KS",
+    "taxrate":"0.07",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "KY",
+    "taxrate":"0.06",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "LA",
+    "taxrate":"0.08",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "ME",
+    "taxrate":"0.0893",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  
+  { 
+    "name": "MD",
+    "taxrate":"0.0825",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "MA",
+    "taxrate":"0.08",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "MI",
+    "taxrate":"0.06",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "MN",
+    "taxrate":"0.098",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "MS",
+    "taxrate":"0.05",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "MO",
+    "taxrate":"0.0625",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "MT",
+    "taxrate":"0.0675",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "NE",
+    "taxrate":"0.0781",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "NH",
+    "taxrate":"0.082",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": true,
+    "economicNexus": true,
+    "franchiseTax:": false,
+    "singlesales:": true
+  },
+  { 
+    "name": "NJ",
+    "taxrate": "0.09",
+    "minimumtax": 2000,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": false,
+    "economicNexus": true,
+    "franchiseTax:": true,
+    "singlesales:": true
+  },
+
+  { 
+    "name": "NM",
+    "taxrate": "0.059",
+    "minimumtax": 0,
+    "salesFactorWeight": 100,
+    "propertyFactorWeigh": 0,
+    "payrollFactorWeight": 0,
+    "localTax": false,
+    "economicNexus": true,
+    "franchiseTax:": true,
+    "singlesales:": true
+  },
+
+  { 
       "name": "NY",
       "taxrate":"0.065",
       "minimumtax": 2000,
@@ -23,10 +402,154 @@
       "franchiseTax:": true,
       "singlesales:": true
     },
-      { 
-      "name": "NJ",
-      "taxrate": "0.065",
+     
+    { 
+      "name": "NC",
+      "taxrate": "0.03",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+    { 
+      "name": "OK",
+      "taxrate": "0.06",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "OR",
+      "taxrate": "0.076",
       "minimumtax": 2000,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    
+    { 
+      "name": "PA",
+      "taxrate": "0.0999",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+     
+    { 
+      "name": "RI",
+      "taxrate": "0.07",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "SC",
+      "taxrate": "0.05",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "TN",
+      "taxrate": "0.065",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "UT",
+      "taxrate": "0.05",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "VT",
+      "taxrate": "0.085",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "VA",
+      "taxrate": "0.06",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+
+    { 
+      "name": "WV",
+      "taxrate": "0.065",
+      "minimumtax": 0,
+      "salesFactorWeight": 100,
+      "propertyFactorWeigh": 0,
+      "payrollFactorWeight": 0,
+      "localTax": false,
+      "economicNexus": true,
+      "franchiseTax:": true,
+      "singlesales:": true
+    },
+    { 
+      "name": "WI",
+      "taxrate": "0.079",
+      "minimumtax": 0,
       "salesFactorWeight": 100,
       "propertyFactorWeigh": 0,
       "payrollFactorWeight": 0,

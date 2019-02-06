@@ -7,11 +7,13 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;  
   }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
+    
   }
   
   .Clients {
@@ -83,4 +85,32 @@ body {
     border-bottom: 1px solid rgba(93,93,98,0.4);
   }
   
-  
+  /***
+  * Custom CSS
+  ***/
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+}
+
+.steps span>a {
+  color: #36ca36;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.steps span>a:hover {
+  background-color: #36ca36;
+  color: #fff;
+  border: 1px solid #439743;
+  transition: 0.5s;
+}

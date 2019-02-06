@@ -6,22 +6,22 @@ import Totals from './usertaxes/Totals'
 import './usertaxes/UserTaxes.css'
 
 class UserTaxes extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
-      usertaxes : []
+      usertaxes : this.props.result
 
     }
   }
 
-  getData(){
-    return axios.get ("http://localhost:4777/stateapportionment")
-  }
-  async componentDidMount() {
-    let items = await this.getData()
-    // console.log(items)
-     this.setState({ usertaxes: items.data })
-  } 
+  // getData(){
+  //   return axios.get ("http://localhost:7878/stateapportionment")
+  // }
+  // async componentDidMount() {
+  //   let items = await this.getData()
+  //   // console.log(items)
+  //    this.setState({ usertaxes: this.props.result})
+  // } 
   render() {
     let usertaxes =[...this.state.usertaxes]
     return ( 

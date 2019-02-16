@@ -1,86 +1,206 @@
 body {
-    background-color: #ecf0f1;
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-  
-  .Clients {
-      width: 90vw;
-      margin: 0 5vw;
-  } 
-  
-  .LoadBar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    background-color: #ecf0f1;
-  }
-  
-  .LoadBar > p {
-    justify-self: center;
-    align-self: center;
-    font-size: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(93,93,98,0.4);
-  }
+  background-color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+}
 
-  .clienttax {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    background-color: #ecf0f1;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+
+}
+
+.Clients {
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.LoadBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: white;
+}
+
+.LoadBar>p {
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #36ca36;
+}
+
+.clienttax {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: #ecf0f1;
+}
+
+.clienttax>p {
+  justify-self: center;
+  align-self: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(93, 93, 98, 0.4);
   
-  .clienttax > p {
-    justify-self: center;
-    align-self: center;
-    font-size: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(93,93,98,0.4);
-  }
-  
-  .totalstax {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    background-color: #ecf0f1;
-  }
-  
-  .totalstax > p {
-    justify-self: center;
-    align-self: center;
-    font-size: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(93,93,98,0.4);
-  }
-  .client > p:hover {
-    color: white
-  }
-  
-  .tablename {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
-    grid-gap: 5px;
-    background-color: #F7CE3E;
-    
-  }
-  
-  .tablename > p {
-    justify-self: center;
-    align-self: center;
-    font-size: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(93,93,98,0.4);
-  }
-  
-  
+}
+
+.totalstax {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: white;
+}
+
+.totalstax>p {
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.client>p:hover {
+  color: white
+}
+
+.tablename {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+  grid-gap: 5px;
+  background-color: #F7CE3E;
+
+}
+
+.tablename>p {
+  justify-self: center;
+  align-self: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(93, 93, 98, 0.4);
+
+}
+
+/***
+  * Custom CSS
+  ***/
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+}
+
+.steps span>a {
+  color: #36ca36;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.steps span>a:hover {
+  background-color: #36ca36;
+  color: #fff;
+  border: 1px solid #eee;
+  transition: 0.5s;
+}
+
+.ClientInput {
+  display: grid;
+  justify-content: center;
+  grid-gap: 3vh;
+  height: 55vh;
+  align-content: center;
+}
+
+.FederalTaxableIncome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+}
+
+.FederalTaxableIncome > input {
+  border: none;
+  border-radius: 5px;
+  padding-left: 1vw;
+}
+
+.FederalTaxableIncome > button {
+  border: none;
+  border-radius: 5px;
+  height: 5vh;
+  color:black;
+}
+
+.state-drop-down {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+}
+
+.state-drop-down > div > select {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 5vh;
+}
+
+.state-drop-down > button {
+  border: none;
+  border-radius: 5px;
+  height: 5vh;
+  background-color: #36ca36;
+  color: #ecf0f1;
+}
+
+.StateInformation {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-gap: 1vw;
+}
+
+.StateInformation > select {
+  border: none;
+  border-radius: 5px;
+  height: 5vh;
+}
+
+.StateInformation > input {
+  padding-left: 1vw;
+  border: none;
+  border-radius: 5px;
+}
+
+.StateInformation > button {
+  border: none;
+  border-radius: 5px;
+  background: none;
+}
+
+.review-texas-submit {
+  border: none;
+  border-radius: 5px;
+  height: 5vh;
+}
+
+.new-state-select {
+  border: none;
+  border-radius: 5px;
+  height: 5vh;
+  display: hidden
+}

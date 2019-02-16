@@ -26,6 +26,6 @@ mongoose.connect('mongodb://localhost/taxprojectDB', { useNewUrlParser: true })
 // Setup to use routes on default
 app.use('/', api)
 //  Port on listen
-const port = 4777
+const port = 7878
 app.listen(port, function () {
     console.log(`Running on port ${port}`)})

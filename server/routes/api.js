@@ -2,7 +2,8 @@ const express = require ('express')
 const router = express.Router()
 
 const ActiveState = require('../model/Activestate')
-const Jurisdiction  = require('../model/Jurisdiction')
+const Model  = require('../model/Jurisdiction')
+const Jurisdiction=Model.jurisdiction
 
 
 // Sanity Test
@@ -40,30 +41,70 @@ router.get('/stateapportionment', async function(req, res){
     
 }) */
 
+router.post ('/datatowork', async function (req, res){
 
+    let datatowork = req.body
+    let objectToTransform = datatowork.statesInformation
+    let statesArray = Object.keys(objectToTransform).map(function(key) {
+        return  {stateName:key, sales:Number(objectToTransform[key])}  
+      })
+
+     let result = statesArray.map(async(state)=>{
+        let jurisdictionName = state.stateName
+        let jurisdiction  = await Jurisdiction.findOne({name:jurisdictionName})
+        let newState = await new ActiveState({
+        activeStateName: state.stateName,
+        salesAmount: state.sales,
+        payrollAmount: 0,
+        propertyAmount: 0,
+        federalTaxableIncome: datatowork.federalTaxableIncome,
+        apportionment:0,
+        adjustedFederalTaxableIncome:0,
+        previouslyfiled: true,
+        adjustment:0,
+        stateTaxableIncome:0,
+        stateTax:0,
+        taxLaw: jurisdiction
+        })
+
+      return newState
+    
+    
+    }) 
+    const finalArray = await Promise.all(result)
+    let totalsales = 0
+    await finalArray.forEach(s=>{totalsales+=s.salesAmount})
+    await finalArray.forEach(s=>s.apportionment=Math.round((s.salesAmount/totalsales)*100))
+    await finalArray.forEach(s=>s.stateTaxableIncome=(s.apportionment*s.federalTaxableIncome)/100) 
+    await finalArray.forEach(s=>s.stateTax = Math.round((s.stateTaxableIncome*s.taxLaw.taxrate)))
+    await console.log(finalArray)
+     await res.send(finalArray)
+
+   
+})
 // Post new item
 //  Post request - finds the id for the jurisdiction based on name and saves the state
-router.post ('/state',   async function (req, res){
-    let jurisdictionName = req.body.activeStateName
-    let jurisdiction  =  await Jurisdiction.findOne({name:jurisdictionName})
-    let newState = new ActiveState({
-        activeStateName: req.body.activeStateName,
-        salesAmount: req.body.salesAmount,
-        payrollAmount: req.body.payrollAmount,
-        propertyAmount: req.body.propertyAmount,
-        federalTaxableIncome: req.body.federalTaxableIncome,
-        apportionment:req.body.apportionment,
-        adjustedFederalTaxableIncome: req.body.adjustedFederalTaxableIncome,
-        previouslyfiled: req.body.previouslyfiled,
-        adjustment:req.body.adjustment,
-        stateTaxableIncome:req.body.stateTaxableIncome,
-        stateTax:req.body.stateTax,
-        taxLaw: jurisdiction._id
+// router.post ('/state',   async function (req, res){
+//     let jurisdictionName = req.body.activeStateName
+//     let jurisdiction  =  await Jurisdiction.findOne({name:jurisdictionName})
+//     let newState = new ActiveState({
+//         activeStateName: req.body.activeStateName,
+//         salesAmount: req.body.salesAmount,
+//         payrollAmount: req.body.payrollAmount,
+//         propertyAmount: req.body.propertyAmount,
+//         federalTaxableIncome: req.body.federalTaxableIncome,
+//         apportionment:req.body.apportionment,
+//         adjustedFederalTaxableIncome: req.body.adjustedFederalTaxableIncome,
+//         previouslyfiled: req.body.previouslyfiled,
+//         adjustment:req.body.adjustment,
+//         stateTaxableIncome:req.body.stateTaxableIncome,
+//         stateTax:req.body.stateTax,
+//         taxLaw: jurisdiction._id
 
-    })
-    newState.save()
-    res.send(newState)
-})
+//     })
+//     newState.save()
+//     res.send(newState)
+// })
 
 //  Update Client by owner A.findByIdAndUpdate(id, update, callback) // executes
 // router.put('/client', function (req, res){
